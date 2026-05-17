@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Section 1: Organizational Profile – URHIDU Website Development Questionnaire Guide" />
+  <meta property="og:title" content="Organizational Profile – URHIDU Docs" />
+  <meta property="og:type" content="website" />
+  <title>Organizational Profile – URHIDU Docs</title>
+  <link rel="icon" type="image/png" href="../assets/logo/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+
+  <!-- TOP HEADER -->
+<header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- 1. Mobile Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+
+      <!-- 2. Brand & Logo Area (Updated with your 3D PNG Logo) -->
+      <div class="header-brand">
+        <a href="../index.html" class="header-logo-link" aria-label="URHIDU Docs Home">
+          <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="header-logo-svg" />
+          <span class="header-brand-name">URHIDU <span class="header-brand-suffix">Docs</span></span>
+        </a>
+      </div>
+
+      <!-- 3. Search Bar Area (Updated with Dropdown Container) -->
+      <div class="header-search-wrap">
+        <div class="search-box" role="search">
+          <!-- Search Icon -->
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          
+          <!-- Input field updated with id="globalSearchInput" -->
+          <input type="search" id="globalSearchInput" class="search-input" placeholder="Search documentation…" aria-label="Search documentation" autocomplete="off" />
+          <kbd class="search-kbd">⌘K</kbd>
+          
+          <!-- NEW: This is where the JS will inject the search results -->
+          <div id="searchResults" class="search-results-dropdown"></div>
+        </div>
+      </div>
+
+      <!-- 4. Action Buttons -->
+      <nav class="header-actions">
+        <a href="https://urhidu.pro.et" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Website</a>
+        <a href="contact-information.html" class="btn btn-gold btn-sm">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="layout-wrapper">
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-inner">
+        <div class="sidebar-logo-wrap">
+          <a href="../index.html" class="sidebar-logo-link">
+          <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="header-logo-svg" />
+            <div class="sidebar-brand-text">
+              <span class="sidebar-brand-name">URHIDU</span>
+              <span class="sidebar-brand-sub">Documentation</span>
+            </div>
+          </a>
+        </div>
+        <div class="sidebar-version-badge">
+          <span class="version-dot"></span>
+          <span>Version 1.0 &nbsp;·&nbsp; 2026 Edition</span>
+        </div>
+        <nav class="sidebar-nav">
+          <div class="nav-group">
+            <span class="nav-group-label">Getting Started</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="../index.html" class="nav-link">Overview</a></li>
+              <li class="nav-item"><a href="../index.html#how-to-use" class="nav-link">How to Use This Guide</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-label">Sections</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item nav-item--active nav-item--expanded">
+                <a href="organization-profile.html" class="nav-link nav-link--active" aria-current="page">
+                  <span class="nav-number">01</span> Organizational Profile
+                </a>
+                <ul class="nav-sub-list" role="list">
+                  <li><a href="#org-name" class="nav-sub-link">Organization Name</a></li>
+                  <li><a href="#org-type" class="nav-sub-link">Organization Type</a></li>
+                  <li><a href="#license" class="nav-sub-link">Business License</a></li>
+                  <li><a href="#year" class="nav-sub-link">Year Established</a></li>
+                  <li><a href="#mission" class="nav-sub-link">Mission & Vision</a></li>
+                  <li><a href="#history" class="nav-sub-link">Brief History</a></li>
+                  <li><a href="#services" class="nav-sub-link">Products & Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="contact-information.html" class="nav-link"><span class="nav-number">02</span> Contact Information</a></li>
+              <li class="nav-item"><a href="website-purpose.html" class="nav-link"><span class="nav-number">03</span> Website Purpose</a></li>
+              <li class="nav-item"><a href="target-audience.html" class="nav-link"><span class="nav-number">04</span> Target Audience</a></li>
+              <li class="nav-item"><a href="branding-identity.html" class="nav-link"><span class="nav-number">05</span> Branding & Identity</a></li>
+              <li class="nav-item"><a href="required-questions.html" class="nav-link"><span class="nav-number">06</span> General Requirements</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="sidebar-footer">
+          <a href="https://urhidu.pro.et" class="sidebar-footer-link" target="_blank" rel="noopener">urhidu.pro.et ↗</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="main" role="main">
+      <div class="content-inner">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list" role="list">
+            <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Docs</a></li>
+            <li class="breadcrumb-sep" aria-hidden="true">/</li>
+            <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">Organizational Profile</li>
+          </ol>
+        </nav>
+
+        <!-- HERO -->
+        <div class="section-hero">
+          <div class="section-hero-badge">Section 01</div>
+          <h1 class="section-hero-title">Organizational Profile</h1>
+          <p class="section-hero-desc">The foundation of your website. These details define your brand identity, legal compliance structure, and the strategic narrative we build your digital presence around.</p>
+        </div>
+
+        <div class="info-box" role="note">
+          <div class="info-box-icon"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M10 9v5M10 7v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div class="info-box-content">
+            <strong class="info-box-title">Section Overview</strong>
+            <p>This section collects 7 key data points about your organization. All fields marked <strong>Required</strong> must be completed before project development can begin.</p>
+          </div>
+        </div>
+
+        <!-- ORG NAME -->
+        <section class="content-section" id="org-name" aria-labelledby="org-name-heading">
+          <h2 class="section-heading" id="org-name-heading">Organization Name</h2>
+          <p class="body-text">Your organization name is the primary anchor for your website's brand identity, structural metadata, and search engine optimization (SEO). It must be entered exactly as it should appear across all digital platforms.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 9h6M7 12h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div>
+                  <p class="field-label">Public Brand Name</p>
+                  <div class="field-meta">
+                    <span class="field-tag field-tag--required">Required</span>
+                  </div>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>The recognizable name you show to customers — for example, <em>Google</em> or <em>IBM</em>. This is used for your website header, logo placement, and homepage title.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2L3 7v11h5v-5h4v5h5V7L10 2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="field-label">Legal Business Name</p>
+                  <div class="field-meta">
+                    <span class="field-tag field-tag--required">Required</span>
+                    <span class="field-tag field-tag--confidential">Confidential</span>
+                  </div>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>The official name used on corporate registrations — for example, <em>URHIDU Technologies Ltd.</em> This is used for privacy policies, terms of service pages, and copyright footers.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="subsection-heading">Why This Matters</h3>
+          <p class="body-text">The text you provide here directly configures several technical elements of your website:</p>
+
+          <div class="table-wrap" role="region" aria-label="Technical impact table" tabindex="0">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th scope="col">Element</th>
+                  <th scope="col">How It Uses Your Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><strong>Browser Tab Title</strong></td><td>Appears at the top of web browsers (e.g., Home | Organization Name)</td></tr>
+                <tr><td><strong>Search Engine Snippets</strong></td><td>Google displays your brand name in search results</td></tr>
+                <tr><td><strong>Copyright Footers</strong></td><td>Automates footer text (e.g., © 2026 Organization Name)</td></tr>
+                <tr><td><strong>Domain Registration</strong></td><td>Guides selection of your web address</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Organization Type</span></div>
+
+        <!-- ORG TYPE -->
+        <section class="content-section" id="org-type" aria-labelledby="org-type-heading">
+          <h2 class="section-heading" id="org-type-heading">Organization Type</h2>
+          <p class="body-text">Your organization type determines the website's legal compliance frameworks, data security standards, and foundational layout. Select the category that best matches your legal structure.</p>
+
+          <div class="option-grid">
+            <div class="option-card">
+              <div class="option-card-icon">🏢</div>
+              <p class="option-card-title">Business (For-Profit)</p>
+              <p class="option-card-desc">Revenue generation, sales leads, client booking. Includes retail, consulting, hospitality.</p>
+            </div>
+            <div class="option-card">
+              <div class="option-card-icon">🤝</div>
+              <p class="option-card-title">Non-Profit / NGO</p>
+              <p class="option-card-desc">Registered charities, foundations, humanitarian groups. Prioritizes fundraising and volunteering.</p>
+            </div>
+            <div class="option-card">
+              <div class="option-card-icon">🎓</div>
+              <p class="option-card-title">Educational Institution</p>
+              <p class="option-card-desc">Schools, universities, online platforms. Requires course catalogs and student portals.</p>
+            </div>
+            <div class="option-card">
+              <div class="option-card-icon">🏛️</div>
+              <p class="option-card-title">Government / Public Sector</p>
+              <p class="option-card-desc">Official civic or state agencies requiring extreme uptime and strict accessibility.</p>
+            </div>
+            <div class="option-card">
+              <div class="option-card-icon">👤</div>
+              <p class="option-card-title">Personal Brand / Portfolio</p>
+              <p class="option-card-desc">Individual creators, public speakers, freelancers displaying personal work.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Business License</span></div>
+
+        <!-- LICENSE -->
+        <section class="content-section" id="license" aria-labelledby="license-heading">
+          <h2 class="section-heading" id="license-heading">Business License Number</h2>
+          <p class="body-text">The official registration number issued by your local government or trade authority. This is used to configure secure integrations, activate payment processing tools, and complete domain verification.</p>
+
+          <div class="warning-box" role="alert">
+            <div class="warning-box-icon"><svg viewBox="0 0 20 20" fill="none"><path d="M10 3L18 17H2L10 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 9v4M10 14.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="warning-box-content">
+              <strong class="warning-box-title">Strictly Confidential</strong>
+              <p>This number will <strong>never</strong> be displayed on the public website. It is used exclusively for technical configuration and merchant account approvals behind the scenes.</p>
+            </div>
+          </div>
+
+          <h3 class="subsection-heading">Frequently Asked Questions</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Will my Business License Number appear publicly on my website?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>No. This information is treated as highly confidential administrative metadata. It is used strictly for technical configurations, server authentications, and merchant account approvals. It will never be visible to your website visitors unless you explicitly request it to be included in your privacy policy.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if we are a new startup and don't have a license number yet?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>If your registration is currently being processed, simply write <code class="inline-code">In Progress</code> or <code class="inline-code">N/A</code>. Our team can build, design, and test your entire website in a private staging environment. You can provide the final number right before we launch the live site.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Year Established</span></div>
+
+        <!-- YEAR -->
+        <section class="content-section" id="year" aria-labelledby="year-heading">
+          <h2 class="section-heading" id="year-heading">Year Established</h2>
+          <p class="body-text">The calendar year your organization was officially founded, launched, or legally incorporated. Sharing this helps our design and copywriting teams build instant credibility with your online audience.</p>
+
+          <div class="note-card">
+            <p class="note-card-title">Why Longevity Matters in Digital Marketing</p>
+            <p>In digital marketing, longevity equals trust. Our team uses your founding date to craft visual trust anchors across your site — custom badge designs, timeline graphics, or taglines like "Serving our community since [Year]" integrated into your footer or logo area.</p>
+          </div>
+
+          <h3 class="subsection-heading">Frequently Asked Questions</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if we just launched this year?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>That is fantastic! Enter the current year. We will frame your website messaging around being a modern, fresh, and innovative new player in your industry.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if our company went through a rebranding or name change?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Enter the year your original organization was first founded. A name change does not erase your operational history, and showing your true founding year preserves your hard-earned industry experience and authority.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Mission, Vision & Goals</span></div>
+
+        <!-- MISSION -->
+        <section class="content-section" id="mission" aria-labelledby="mission-heading">
+          <h2 class="section-heading" id="mission-heading">Mission, Vision & Goal Statements</h2>
+          <p class="body-text">Your organization's mission, vision, and goals define your identity and future direction. These statements provide the creative blueprint for your website's visual tone, content priority, and user experience.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M10 6v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div>
+                  <p class="field-label">Mission Statement</p>
+                  <div class="field-meta"><span class="field-tag field-tag--required">Required</span></div>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>Focus on the <strong>present</strong>. What does your organization do right now, who do you serve, and how?</p>
+                <div class="quote-block">
+                  <p>"To provide fresh, organic, locally-sourced meals to busy families daily."</p>
+                  <cite>Example Mission Statement</cite>
+                </div>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="field-label">Vision Statement</p>
+                  <div class="field-meta"><span class="field-tag field-tag--required">Required</span></div>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>Focus on the <strong>future</strong>. What is the ultimate, long-term impact your organization hopes to achieve?</p>
+                <div class="quote-block">
+                  <p>"To eliminate food waste in our city by 2030."</p>
+                  <cite>Example Vision Statement</cite>
+                </div>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M5 10l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="field-label">Goal Statement</p>
+                  <div class="field-meta"><span class="field-tag field-tag--required">Required</span></div>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>Focus on <strong>action</strong>. What specific, measurable outcomes do you want this website to help achieve?</p>
+                <div class="quote-block">
+                  <p>"To secure 500 online orders per month and increase email newsletter signups by 20%."</p>
+                  <cite>Example Goal Statement</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tip-box" role="note">
+            <div class="tip-box-icon"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 0 1 3 11.2V15a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-1.8A6 6 0 0 1 10 2z" stroke="currentColor" stroke-width="1.8"/><path d="M8 17h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="tip-box-content">
+              <strong class="tip-box-title">Don't Have Official Statements?</strong>
+              <p>Don't let this delay your submission. Simply write bullet points answering: Why did you start this organization? Who is your dream customer? What is the single most important action you want visitors to take?</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Brief History</span></div>
+
+        <!-- HISTORY -->
+        <section class="content-section" id="history" aria-labelledby="history-heading">
+          <h2 class="section-heading" id="history-heading">Brief History / Background</h2>
+          <p class="body-text">Your organization's history provides background context that establishes trust, credibility, and authenticity on your new website. A simple bulleted timeline works perfectly.</p>
+
+          <p class="body-text">Focus on three key areas:</p>
+          <ul class="doc-list doc-list--bullet">
+            <li><strong>The Origin:</strong> When and why was the organization founded? Who started it?</li>
+            <li><strong>Key Milestones:</strong> Major turning points — expanding your team, launching flagship products, winning awards.</li>
+            <li><strong>The Evolution:</strong> How has your mission or target audience shifted from the beginning to today?</li>
+          </ul>
+
+          <h3 class="subsection-heading">How We Use Your History</h3>
+
+          <div class="checklist">
+            <div class="checklist-item">
+              <div class="checklist-icon">✓</div>
+              <span><strong>About Us Page:</strong> Raw material for our copywriters to draft a compelling, humanized "Our Story" page.</span>
+            </div>
+            <div class="checklist-item">
+              <div class="checklist-icon">✓</div>
+              <span><strong>Trust Signals:</strong> We use your milestones to design visual timelines, counter graphics, or historical galleries.</span>
+            </div>
+            <div class="checklist-item">
+              <div class="checklist-icon">✓</div>
+              <span><strong>Brand Continuity:</strong> Understanding your legacy ensures your new website modernizes while respecting your history.</span>
+            </div>
+          </div>
+
+          <div class="note-card">
+            <p class="note-card-title">Length Guidance</p>
+            <p>A 100–200 word summary or 4–5 bullet points covering your main operational highlights is more than enough context for our team. No polished paragraphs required.</p>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Products & Services</span></div>
+
+        <!-- SERVICES -->
+        <section class="content-section" id="services" aria-labelledby="services-heading">
+          <h2 class="section-heading" id="services-heading">Key Products / Services / Programs</h2>
+          <p class="body-text">This section outlines what your organization offers to the world. For our developers, this list serves as the literal foundation for your website's structural architecture and user navigation.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="3" y="3" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="11" y="3" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="11" y="11" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div>
+                  <p class="field-label">For Businesses</p>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>List your primary product categories or services (e.g., Room Booking, Spa Treatments, Event Catering, E-Commerce).</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 3c-1 3-4 4-6 4v6c0 3 3 5 6 5s6-2 6-5V7c-2 0-5-1-6-4z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="field-label">For Non-Profits</p>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>List your active community programs, campaigns, or core initiatives.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M4 4h12v8H4zM8 12v4m4-4v4M6 16h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div>
+                  <p class="field-label">For Educational Entities</p>
+                </div>
+              </div>
+              <div class="field-body">
+                <p>List your courses, degrees, or certifications offered to students.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="subsection-heading">Why Your Services Define Your Navigation</h3>
+          <p class="body-text">Each major service or program you list typically translates into a dedicated page or dropdown link in your website's main navigation bar. This directly determines how visitors find and purchase what you offer.</p>
+
+          <div class="warning-box" role="note">
+            <div class="warning-box-icon"><svg viewBox="0 0 20 20" fill="none"><path d="M10 3L18 17H2L10 3z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M10 9v4M10 14.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="warning-box-content">
+              <strong class="warning-box-title">Keep It High-Level</strong>
+              <p>Please focus only on high-level categories. Instead of listing 50 individual dishes, a restaurant should list broad categories like "Dine-in Menu, Catering Services, and Private Events."</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ARTICLE NAV -->
+        <nav class="article-nav" aria-label="Article navigation">
+          <a href="../index.html" class="article-nav-prev">
+            <span class="article-nav-label">← Previous</span>
+            <span class="article-nav-title">Overview</span>
+          </a>
+          <a href="contact-information.html" class="article-nav-next">
+            <span class="article-nav-label">Next Section</span>
+            <span class="article-nav-title">Contact Information →</span>
+          </a>
+        </nav>
+
+      </div>
+    </main>
+  </div>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      
+      <div class="footer-brand">
+        <!-- Updated: Your new 3D PNG logo replacing the SVG -->
+        <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="footer-logo" />
+        
+        <div>
+          <p class="footer-company">URHIDU Company</p>
+          <p class="footer-tagline">Premium Website Development &amp; Digital Strategy</p>
+        </div>
+      </div>
+      
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Documentation</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="../index.html" class="footer-link">Overview</a></li>
+            <li><a href="organization-profile.html" class="footer-link">Org Profile</a></li>
+            <li><a href="contact-information.html" class="footer-link">Contact Info</a></li>
+            <li><a href="website-purpose.html" class="footer-link">Website Purpose</a></li>
+            <li><a href="target-audience.html" class="footer-link">Target Audience</a></li>
+            <li><a href="branding-identity.html" class="footer-link">Branding</a></li>
+            <li><a href="required-questions.html" class="footer-link">Requirements</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <address class="footer-address">
+            <p><a href="https://urhidu.pro.et" class="footer-link" target="_blank" rel="noopener">urhidu.pro.et</a></p>
+            <p><a href="tel:+251989954455" class="footer-link">+251 989 954 455</a></p>
+            <p>Dire Dawa, Ethiopia</p>
+          </address>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 URHIDU Company. All rights reserved.</p>
+      <p class="footer-meta">Documentation v1.0 &nbsp;·&nbsp; Last updated: May 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+    function toggleSidebar(open) {
+      sidebar.classList.toggle('sidebar--open', open);
+      overlay.classList.toggle('overlay--visible', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('no-scroll', open);
+    }
+    menuToggle.addEventListener('click', () => toggleSidebar(!sidebar.classList.contains('sidebar--open')));
+    overlay.addEventListener('click', () => toggleSidebar(false));
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-item--open');
+        document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('faq-item--open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+        if (!isOpen) { item.classList.add('faq-item--open'); this.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  </script>
+  
+    <script src="../js/search.js"></script>
+</body>
+</html>
