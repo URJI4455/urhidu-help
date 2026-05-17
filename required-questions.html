@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Section 6: General Required Questions – URHIDU Website Development Questionnaire Guide" />
+  <meta property="og:title" content="General Requirements – URHIDU Docs" />
+  <meta property="og:type" content="website" />
+  <title>General Requirements – URHIDU Docs</title>
+  <link rel="icon" type="image/png" href="../assets/logo/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+
+  <!-- TOP HEADER -->
+<header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- 1. Mobile Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+
+      <!-- 2. Brand & Logo Area (Updated with your 3D PNG Logo) -->
+      <div class="header-brand">
+        <a href="../index.html" class="header-logo-link" aria-label="URHIDU Docs Home">
+          <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="header-logo-svg" />
+          <span class="header-brand-name">URHIDU <span class="header-brand-suffix">Docs</span></span>
+        </a>
+      </div>
+
+      <!-- 3. Search Bar Area (Updated with Dropdown Container) -->
+      <div class="header-search-wrap">
+        <div class="search-box" role="search">
+          <!-- Search Icon -->
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          
+          <!-- Input field updated with id="globalSearchInput" -->
+          <input type="search" id="globalSearchInput" class="search-input" placeholder="Search documentation…" aria-label="Search documentation" autocomplete="off" />
+          <kbd class="search-kbd">⌘K</kbd>
+          
+          <!-- NEW: This is where the JS will inject the search results -->
+          <div id="searchResults" class="search-results-dropdown"></div>
+        </div>
+      </div>
+
+      <!-- 4. Action Buttons -->
+      <nav class="header-actions">
+        <a href="https://urhidu.pro.et" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Website</a>
+        <a href="contact-information.html" class="btn btn-gold btn-sm">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="layout-wrapper">
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-inner">
+        <div class="sidebar-logo-wrap">
+          <a href="../index.html" class="sidebar-logo-link">
+            <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="header-logo-svg" />
+            <div class="sidebar-brand-text"><span class="sidebar-brand-name">URHIDU</span><span class="sidebar-brand-sub">Documentation</span></div>
+          </a>
+        </div>
+        <div class="sidebar-version-badge"><span class="version-dot"></span><span>Version 1.0 &nbsp;·&nbsp; 2026 Edition</span></div>
+        <nav class="sidebar-nav">
+          <div class="nav-group">
+            <span class="nav-group-label">Getting Started</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="../index.html" class="nav-link">Overview</a></li>
+              <li class="nav-item"><a href="../index.html#how-to-use" class="nav-link">How to Use This Guide</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-label">Sections</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="organization-profile.html" class="nav-link"><span class="nav-number">01</span> Organizational Profile</a></li>
+              <li class="nav-item"><a href="contact-information.html" class="nav-link"><span class="nav-number">02</span> Contact Information</a></li>
+              <li class="nav-item"><a href="website-purpose.html" class="nav-link"><span class="nav-number">03</span> Website Purpose</a></li>
+              <li class="nav-item"><a href="target-audience.html" class="nav-link"><span class="nav-number">04</span> Target Audience</a></li>
+              <li class="nav-item"><a href="branding-identity.html" class="nav-link"><span class="nav-number">05</span> Branding &amp; Identity</a></li>
+              <li class="nav-item nav-item--active nav-item--expanded">
+                <a href="required-questions.html" class="nav-link nav-link--active" aria-current="page"><span class="nav-number">06</span> General Requirements</a>
+                <ul class="nav-sub-list" role="list">
+                  <li><a href="#social-proof" class="nav-sub-link">Testimonials &amp; Partners</a></li>
+                  <li><a href="#social-links" class="nav-sub-link">Social &amp; Inspiration Links</a></li>
+                  <li><a href="#google-profile" class="nav-sub-link">Google &amp; Mobile Apps</a></li>
+                  <li><a href="#launch-budget" class="nav-sub-link">Launch Date &amp; Budget</a></li>
+                  <li><a href="#legal-pages" class="nav-sub-link">Legal Pages</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-label">Support</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="contact-information.html" class="nav-link">Contact URHIDU</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="sidebar-footer"><a href="https://urhidu.pro.et" class="sidebar-footer-link" target="_blank" rel="noopener">urhidu.pro.et ↗</a></div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="main" role="main">
+      <div class="content-inner">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list" role="list">
+            <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Docs</a></li>
+            <li class="breadcrumb-sep" aria-hidden="true">/</li>
+            <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">General Requirements</li>
+          </ol>
+        </nav>
+
+        <div class="section-hero">
+          <div class="section-hero-badge">Section 06 — Final Section</div>
+          <h1 class="section-hero-title">General Requirements</h1>
+          <p class="section-hero-desc">Providing clear business assets, reference links, and timeline expectations helps our team keep your project on schedule while ensuring your site stays legally compliant and built for future growth.</p>
+        </div>
+
+        <div class="info-box" role="note">
+          <div class="info-box-icon"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M10 9v5M10 7v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div class="info-box-content">
+            <strong class="info-box-title">You're Almost Done</strong>
+            <p>This is the final section of the questionnaire. It covers five remaining elements: social proof assets, social media and inspiration links, Google Business and mobile app plans, launch timeline and budget, and legal page requirements.</p>
+          </div>
+        </div>
+
+        <!-- SOCIAL PROOF -->
+        <section class="content-section" id="social-proof" aria-labelledby="social-proof-heading">
+          <h2 class="section-heading" id="social-proof-heading">1. Testimonials, Partner Logos &amp; Photo Galleries</h2>
+          <p class="body-text">Gather positive reviews from past clients, logos of companies you serve, or original workspace photos. Online users buy from brands they trust. These assets allow us to build custom Social Proof Sections that dramatically boost customer conversion rates.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <div><p class="field-label">Client Testimonials</p><div class="field-meta"><span class="field-tag field-tag--optional">Highly Recommended</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Written reviews, star ratings, or video testimonials from satisfied clients. We use these to build review carousels and quote sections on your homepage. Provide: client name, company (if applicable), their quote, and a photo if available.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="3" y="5" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="12" y="5" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="12" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/><rect x="12" y="12" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div><p class="field-label">Partner / Client Logos</p><div class="field-meta"><span class="field-tag field-tag--optional">Optional</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Logos of notable companies you have worked with or serve. These form a "trusted by" logo grid strip — one of the highest-converting trust signals on any professional website. Provide in PNG (transparent) or SVG format.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><circle cx="7" cy="9" r="2" stroke="currentColor" stroke-width="1.6"/><path d="M2 14l4-3 3 3 3-4 6 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <div><p class="field-label">Workspace / Product Photos</p><div class="field-meta"><span class="field-tag field-tag--optional">Optional</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Original, high-resolution photographs of your team, workspace, products, or services in action. Authentic photography dramatically outperforms stock images in building user trust. Minimum 1200px wide, JPG or PNG format.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Social &amp; Inspiration</span></div>
+
+        <!-- SOCIAL LINKS -->
+        <section class="content-section" id="social-links" aria-labelledby="social-heading">
+          <h2 class="section-heading" id="social-heading">2. Social Media Links &amp; Inspiration Websites</h2>
+          <p class="body-text">Share the web addresses of your social media profiles and list 1 or 2 existing websites you admire. This allows us to program social icons that connect your website directly to your online communities, and understand your exact design preferences.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M18 5a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm0 10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5h16v5z" stroke="currentColor" stroke-width="1.6"/></svg>
+                <div><p class="field-label">Social Media Profiles</p><div class="field-meta"><span class="field-tag field-tag--optional">Optional</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Provide full URLs to each platform your business uses actively. We support: Facebook, Instagram, TikTok, Telegram, YouTube, LinkedIn, Twitter/X, Snapchat, and others.</p>
+                <div class="config-block">
+                  <div class="config-block-header"><span class="config-block-label">Format Example</span></div>
+                  <pre><code>Facebook:   https://facebook.com/yourpage
+Instagram:  https://instagram.com/yourhandle
+Telegram:   https://t.me/yourchannel
+YouTube:    https://youtube.com/@yourchannel
+LinkedIn:   https://linkedin.com/company/yourco</code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M10 6v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Inspiration Websites</p><div class="field-meta"><span class="field-tag field-tag--optional">Highly Recommended</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Share 1–3 URLs of existing websites whose design, layout, or navigation you love. Inspiration links show us your exact visual preferences so we can align our design direction before we write a single line of code. Be as specific as possible — "I love how their homepage hero section is structured" is very helpful.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Google &amp; Mobile Apps</span></div>
+
+        <!-- GOOGLE PROFILE -->
+        <section class="content-section" id="google-profile" aria-labelledby="google-heading">
+          <h2 class="section-heading" id="google-heading">3. Google Business Profile &amp; Future Mobile Apps</h2>
+          <p class="body-text">Indicate if you need a Google Maps directory profile set up, and let us know if you plan to build a mobile app later. These decisions affect how we architect your website's backend.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" stroke="currentColor" stroke-width="1.8"/><path d="M10 11v6M7 17h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 9C3 5.134 6.134 2 10 2s7 3.134 7 7c0 4-7 11-7 11S3 13 3 9z" stroke="currentColor" stroke-width="1.8"/></svg>
+                <div><p class="field-label">Google Business Profile</p><div class="field-meta"><span class="field-tag field-tag--optional">Recommended for Local Businesses</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>A Google Business profile ensures your business shows up on Google Maps and local search when customers search nearby. We can create or link your existing profile and embed an interactive map widget directly into your Contact page.</p>
+                <div class="note-card">
+                  <p class="note-card-title">What Google Business Profile Requires</p>
+                  <p>To verify a Google Business profile, you typically need a physical business address or phone number. Virtual addresses may not be accepted. Our team will guide you through the verification process.</p>
+                </div>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="5" y="2" width="10" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 5h4M10 15v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Future Mobile App Plans</p><div class="field-meta"><span class="field-tag field-tag--optional">Optional</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Let us know if you plan to build a mobile app in the future. Knowing this early tells our engineers to build your website with flexible API connections — making it fast and cost-effective to feed the same data to a mobile app later, without rebuilding your backend from scratch.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Launch Date &amp; Budget</span></div>
+
+        <!-- LAUNCH & BUDGET -->
+        <section class="content-section" id="launch-budget" aria-labelledby="launch-heading">
+          <h2 class="section-heading" id="launch-heading">4. Launch Date &amp; Budget Range</h2>
+          <p class="body-text">State your launch deadline and your investment boundaries. Timelines and budgets help us assign the right development resources to hit your target on time and within scope.</p>
+
+          <div class="table-wrap" role="region" aria-label="Launch timeline options" tabindex="0">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th scope="col">Timeline</th>
+                  <th scope="col">What We Deliver</th>
+                  <th scope="col">Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Urgent (Under 2 weeks)</strong></td>
+                  <td>Professional single-page "coming soon" landing page launched first. Full site built in parallel.</td>
+                  <td>Businesses needing an online presence immediately (events, product launches)</td>
+                </tr>
+                <tr>
+                  <td><strong>Standard (2–6 weeks)</strong></td>
+                  <td>Complete multi-page website with all requested features, fully tested and launched.</td>
+                  <td>Most small-to-medium business websites</td>
+                </tr>
+                <tr>
+                  <td><strong>Enterprise (6–12 weeks)</strong></td>
+                  <td>Complex platforms with custom databases, e-commerce, booking systems, and API integrations.</td>
+                  <td>Hotels, large e-commerce stores, corporate platforms</td>
+                </tr>
+                <tr>
+                  <td><strong>Flexible (No fixed date)</strong></td>
+                  <td>We work at a measured pace focused on quality over speed, with regular milestone check-ins.</td>
+                  <td>Startups and new businesses building their first platform</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tip-box" role="note">
+            <div class="tip-box-icon"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 0 1 3 11.2V15a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-1.8A6 6 0 0 1 10 2z" stroke="currentColor" stroke-width="1.8"/><path d="M8 17h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="tip-box-content">
+              <strong class="tip-box-title">Urgent Launch?</strong>
+              <p>State your deadline clearly. For highly urgent launches, our team can deploy a professional, branded "coming soon" landing page first — so your business remains active online — while your full website is built in the background.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Legal Pages</span></div>
+
+        <!-- LEGAL PAGES -->
+        <section class="content-section" id="legal-pages" aria-labelledby="legal-heading">
+          <h2 class="section-heading" id="legal-heading">5. Legal Pages</h2>
+          <p class="body-text">Selecting legal pages signals our team to deploy the appropriate legal text containers, protecting your business from data privacy liabilities and securing your online checkout systems.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="4" y="2" width="12" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 7h4M8 10h4M8 13h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Privacy Policy</p><div class="field-meta"><span class="field-tag field-tag--required">Strongly Recommended</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Required by law if your site uses analytics (e.g., Google Analytics) or collects user data via contact forms. Informs users how their data is collected and used. Protects your business from regulatory fines under GDPR and similar frameworks.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2l1.5 4.5H16l-3.7 2.7 1.4 4.3L10 11 6.3 13.5l1.4-4.3L4 6.5h4.5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                <div><p class="field-label">Terms of Service</p><div class="field-meta"><span class="field-tag field-tag--optional">Recommended for E-Commerce</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Sets the legal agreement between your business and users of your website. Especially critical for e-commerce stores, booking platforms, and any site handling financial transactions. Defines refund policies, service conditions, and dispute procedures.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M10 7v6M7 10h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Cookie Policy</p><div class="field-meta"><span class="field-tag field-tag--optional">Optional</span></div></div>
+              </div>
+              <div class="field-body">
+                <p>Discloses to users how your website uses browser cookies for analytics, session management, and advertising tracking. Required by EU law for any site serving European visitors. We include a cookie consent banner if selected.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="subsection-heading">Frequently Asked Questions</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Why do we need a Privacy Policy if we don't store passwords?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>If your website uses basic analytics (like Google Analytics) to track visitor numbers, or has a standard contact form that collects a name and email address, privacy laws in many countries require you to inform users how their browsing data is collected and processed. Having a Privacy Policy page protects your brand from legal fines and builds trust with visitors who are increasingly privacy-conscious.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if our ideal launch date is extremely urgent?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Please state your deadline clearly in the questionnaire. For highly urgent launches, our development team can build your project in phases — launching a professional, single-page "coming soon" landing page first, then building out your secondary pages while your business remains active online. This means you can have a live, branded web presence within days while the full site is completed.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Do I need a Terms of Service page if I'm not selling anything?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>For pure informational websites, a Terms of Service page is not strictly required. However, it is still recommended if your site allows user registration, forum participation, or any kind of user-generated content. For any website handling payments or bookings, Terms of Service is essential and protects you from financial disputes and chargebacks.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Who writes the Privacy Policy and Terms of Service content?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>URHIDU Company provides professionally structured legal page templates tailored to your specific business type and data collection practices. These templates cover all standard regulatory requirements. For highly specialized industries (fintech, healthcare, legal services) with complex data handling requirements, we recommend having a local legal professional review the final content before publishing.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- COMPLETION BANNER -->
+        <section class="content-section" aria-labelledby="complete-heading">
+          <div class="section-hero" style="background:linear-gradient(135deg,#0a4a1a,#1a3a0a);">
+            <div class="section-hero-badge" style="background:#22c55e;color:#fff;">✓ Questionnaire Complete</div>
+            <h2 class="section-hero-title" id="complete-heading" style="font-size:1.75rem;">You've Covered All Six Sections</h2>
+            <p class="section-hero-desc">Once you've gathered all the information across Sections 1–6, you're ready to submit your questionnaire to URHIDU Company. Our team will review your submission and reach out within 1–2 business days.</p>
+            <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+              <a href="contact-information.html" class="btn btn-gold btn-sm" style="height:42px;padding:0 1.5rem;font-size:0.9375rem;">Contact Us to Submit</a>
+              <a href="../index.html" class="btn btn-ghost btn-sm" style="height:42px;padding:0 1.5rem;font-size:0.9375rem;color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.2);">Back to Overview</a>
+            </div>
+          </div>
+        </section>
+
+        <nav class="article-nav" aria-label="Article navigation">
+          <a href="branding-identity.html" class="article-nav-prev">
+            <span class="article-nav-label">← Previous</span>
+            <span class="article-nav-title">Branding &amp; Identity</span>
+          </a>
+          <a href="../index.html" class="article-nav-next">
+            <span class="article-nav-label">Back to Start</span>
+            <span class="article-nav-title">Documentation Overview →</span>
+          </a>
+        </nav>
+
+      </div>
+    </main>
+  </div>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      
+      <div class="footer-brand">
+        <!-- Updated: Your new 3D PNG logo replacing the SVG -->
+        <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="footer-logo" />
+        
+        <div>
+          <p class="footer-company">URHIDU Company</p>
+          <p class="footer-tagline">Premium Website Development &amp; Digital Strategy</p>
+        </div>
+      </div>
+      
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Documentation</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="../index.html" class="footer-link">Overview</a></li>
+            <li><a href="organization-profile.html" class="footer-link">Org Profile</a></li>
+            <li><a href="contact-information.html" class="footer-link">Contact Info</a></li>
+            <li><a href="website-purpose.html" class="footer-link">Website Purpose</a></li>
+            <li><a href="target-audience.html" class="footer-link">Target Audience</a></li>
+            <li><a href="branding-identity.html" class="footer-link">Branding</a></li>
+            <li><a href="required-questions.html" class="footer-link">Requirements</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <address class="footer-address">
+            <p><a href="https://urhidu.pro.et" class="footer-link" target="_blank" rel="noopener">urhidu.pro.et</a></p>
+            <p><a href="tel:+251989954455" class="footer-link">+251 989 954 455</a></p>
+            <p>Dire Dawa, Ethiopia</p>
+          </address>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 URHIDU Company. All rights reserved.</p>
+      <p class="footer-meta">Documentation v1.0 &nbsp;·&nbsp; Last updated: May 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+    function toggleSidebar(open) {
+      sidebar.classList.toggle('sidebar--open', open);
+      overlay.classList.toggle('overlay--visible', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('no-scroll', open);
+    }
+    menuToggle.addEventListener('click', () => toggleSidebar(!sidebar.classList.contains('sidebar--open')));
+    overlay.addEventListener('click', () => toggleSidebar(false));
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-item--open');
+        document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('faq-item--open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+        if (!isOpen) { item.classList.add('faq-item--open'); this.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  </script>
+  
+    <script src="../js/search.js"></script>
+</body>
+</html>

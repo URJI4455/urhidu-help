@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Section 4: Target Audience – URHIDU Website Development Questionnaire Guide" />
+  <meta property="og:title" content="Target Audience – URHIDU Docs" />
+  <meta property="og:type" content="website" />
+  <title>Target Audience – URHIDU Docs</title>
+  <link rel="icon" type="image/png" href="../assets/logo/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+
+  <!-- TOP HEADER -->
+<header class="site-header" role="banner">
+    <div class="header-inner">
+      <!-- 1. Mobile Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-line"></span><span class="hamburger-line"></span><span class="hamburger-line"></span>
+      </button>
+
+      <!-- 2. Brand & Logo Area (Updated with your 3D PNG Logo) -->
+      <div class="header-brand">
+        <a href="../index.html" class="header-logo-link" aria-label="URHIDU Docs Home">
+          <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="header-logo-svg" />
+          <span class="header-brand-name">URHIDU <span class="header-brand-suffix">Docs</span></span>
+        </a>
+      </div>
+
+      <!-- 3. Search Bar Area (Updated with Dropdown Container) -->
+      <div class="header-search-wrap">
+        <div class="search-box" role="search">
+          <!-- Search Icon -->
+          <svg class="search-icon" viewBox="0 0 20 20" fill="none"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.8"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          
+          <!-- Input field updated with id="globalSearchInput" -->
+          <input type="search" id="globalSearchInput" class="search-input" placeholder="Search documentation…" aria-label="Search documentation" autocomplete="off" />
+          <kbd class="search-kbd">⌘K</kbd>
+          
+          <!-- NEW: This is where the JS will inject the search results -->
+          <div id="searchResults" class="search-results-dropdown"></div>
+        </div>
+      </div>
+
+      <!-- 4. Action Buttons -->
+      <nav class="header-actions">
+        <a href="https://urhidu.pro.et" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Website</a>
+        <a href="contact-information.html" class="btn btn-gold btn-sm">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="layout-wrapper">
+    <div class="sidebar-overlay" id="sidebarOverlay" aria-hidden="true"></div>
+
+    <aside class="sidebar" id="sidebar" role="navigation" aria-label="Documentation navigation">
+      <div class="sidebar-inner">
+        <div class="sidebar-logo-wrap">
+          <a href="../index.html" class="sidebar-logo-link">
+          <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="header-logo-svg" />
+            <div class="sidebar-brand-text"><span class="sidebar-brand-name">URHIDU</span><span class="sidebar-brand-sub">Documentation</span></div>
+          </a>
+        </div>
+        <div class="sidebar-version-badge"><span class="version-dot"></span><span>Version 1.0 &nbsp;·&nbsp; 2026 Edition</span></div>
+        <nav class="sidebar-nav">
+          <div class="nav-group">
+            <span class="nav-group-label">Getting Started</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="../index.html" class="nav-link">Overview</a></li>
+              <li class="nav-item"><a href="../index.html#how-to-use" class="nav-link">How to Use This Guide</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-label">Sections</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="organization-profile.html" class="nav-link"><span class="nav-number">01</span> Organizational Profile</a></li>
+              <li class="nav-item"><a href="contact-information.html" class="nav-link"><span class="nav-number">02</span> Contact Information</a></li>
+              <li class="nav-item"><a href="website-purpose.html" class="nav-link"><span class="nav-number">03</span> Website Purpose</a></li>
+              <li class="nav-item nav-item--active nav-item--expanded">
+                <a href="target-audience.html" class="nav-link nav-link--active" aria-current="page"><span class="nav-number">04</span> Target Audience</a>
+                <ul class="nav-sub-list" role="list">
+                  <li><a href="#age-range" class="nav-sub-link">Age Range</a></li>
+                  <li><a href="#geography" class="nav-sub-link">Geographic Focus</a></li>
+                  <li><a href="#language" class="nav-sub-link">Language</a></li>
+                  <li><a href="#device" class="nav-sub-link">Primary Device</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="branding-identity.html" class="nav-link"><span class="nav-number">05</span> Branding &amp; Identity</a></li>
+              <li class="nav-item"><a href="required-questions.html" class="nav-link"><span class="nav-number">06</span> General Requirements</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <span class="nav-group-label">Support</span>
+            <ul class="nav-list" role="list">
+              <li class="nav-item"><a href="contact-information.html" class="nav-link">Contact URHIDU</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="sidebar-footer"><a href="https://urhidu.pro.et" class="sidebar-footer-link" target="_blank" rel="noopener">urhidu.pro.et ↗</a></div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="main" role="main">
+      <div class="content-inner">
+
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb-list" role="list">
+            <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Docs</a></li>
+            <li class="breadcrumb-sep" aria-hidden="true">/</li>
+            <li class="breadcrumb-item breadcrumb-item--current" aria-current="page">Target Audience</li>
+          </ol>
+        </nav>
+
+        <div class="section-hero">
+          <div class="section-hero-badge">Section 04</div>
+          <h1 class="section-hero-title">Target Audience</h1>
+          <p class="section-hero-desc">Your target audience consists of the specific individuals most likely to use your website. Defining who they are ensures our team builds a site that feels natural, loads correctly on their devices, and speaks their language.</p>
+        </div>
+
+        <div class="info-box" role="note">
+          <div class="info-box-icon"><svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M10 9v5M10 7v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <div class="info-box-content">
+            <strong class="info-box-title">Who Is Your Most Valuable Visitor?</strong>
+            <p>Focus on the person most likely to make a purchasing decision or take a meaningful action — not everyone who might stumble onto your site. This is who we design for.</p>
+          </div>
+        </div>
+
+        <!-- AGE RANGE -->
+        <section class="content-section" id="age-range" aria-labelledby="age-heading">
+          <h2 class="section-heading" id="age-heading">1. Age Range of Primary Audience</h2>
+          <p class="body-text">Specify the main age bracket of your ideal user. Age directly affects website usability and accessibility decisions our team makes throughout the design process.</p>
+
+          <div class="table-wrap" role="region" aria-label="Age range design implications" tabindex="0">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th scope="col">Age Group</th>
+                  <th scope="col">Design Approach</th>
+                  <th scope="col">Example Audience</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>16 – 25</strong></td>
+                  <td>Bold visuals, fast interactions, minimalist menus, social media-style layouts</td>
+                  <td>Fashion brand, music service, gaming platform</td>
+                </tr>
+                <tr>
+                  <td><strong>25 – 40</strong></td>
+                  <td>Clean layouts, efficiency-focused UX, clear CTAs, professional tone</td>
+                  <td>Corporate service, fintech, SaaS, consulting</td>
+                </tr>
+                <tr>
+                  <td><strong>35 – 55</strong></td>
+                  <td>Larger text, explicit labels, trust signals, simplified navigation</td>
+                  <td>Legal firm, medical clinic, real estate agency</td>
+                </tr>
+                <tr>
+                  <td><strong>55 – 65+</strong></td>
+                  <td>Large fonts, prominent buttons, high contrast, step-by-step instruction layout</td>
+                  <td>Healthcare provider, government service, retirement planning</td>
+                </tr>
+                <tr>
+                  <td><strong>All Ages</strong></td>
+                  <td>Universally accessible: WCAG-compliant contrast, clear hierarchy, flexible text sizing</td>
+                  <td>Supermarket, community service, utility provider</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="tip-box" role="note">
+            <div class="tip-box-icon"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 0 1 3 11.2V15a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-1.8A6 6 0 0 1 10 2z" stroke="currentColor" stroke-width="1.8"/><path d="M8 17h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <div class="tip-box-content">
+              <strong class="tip-box-title">Focus on Decision-Makers</strong>
+              <p>If you operate a family dental clinic, your primary website visitors are the adult billing decision-makers (ages 25–60) who book appointments — not the children who receive the actual service. Design for the person who types in your URL.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Geographic Focus</span></div>
+
+        <!-- GEOGRAPHY -->
+        <section class="content-section" id="geography" aria-labelledby="geo-heading">
+          <h2 class="section-heading" id="geo-heading">2. Geographic Focus</h2>
+          <p class="body-text">Select where your primary visitors physically live. This determines how our engineers configure your website's server infrastructure and content delivery.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 1 0 0 12A6 6 0 0 0 10 2zm0 0v12M4.27 5h11.46M3 10h14M4.27 15h11.46" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Local</p></div>
+              </div>
+              <div class="field-body">
+                <p>A specific city or neighborhood (e.g., Dire Dawa, Addis Ababa). We host your website files on nearby servers for instant loading speeds.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><path d="M10 2a6 6 0 1 0 0 12A6 6 0 0 0 10 2zm0 0v12M4.27 5h11.46M3 10h14M4.27 15h11.46" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div><p class="field-label">National</p></div>
+              </div>
+              <div class="field-body">
+                <p>An entire single country. We configure multi-region server routing to ensure fast loading speeds across all major cities in your country.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h16M10 2c-2.5 3-2.5 13 0 16M10 2c2.5 3 2.5 13 0 16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div><p class="field-label">International</p></div>
+              </div>
+              <div class="field-body">
+                <p>Multiple global regions or countries. We install a Global Content Delivery Network (CDN) to ensure the site loads quickly anywhere in the world — critical for hotels, export businesses, and international service providers.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Language</span></div>
+
+        <!-- LANGUAGE -->
+        <section class="content-section" id="language" aria-labelledby="lang-heading">
+          <h2 class="section-heading" id="lang-heading">3. Language Spoken by Audience</h2>
+          <p class="body-text">List all the languages your website must support. This tells our developers how many translation frameworks to build into your content management system (CMS).</p>
+
+          <div class="note-card">
+            <p class="note-card-title">Typography Consideration</p>
+            <p>Language selection also affects typography. Fonts must cleanly support all selected alphabets and scripts. For Ethiopian markets, we ensure full support for Amharic (Ethiopic script), Afan Oromo (Latin), and English across all heading and body typefaces.</p>
+          </div>
+
+          <div class="table-wrap" role="region" aria-label="Language examples and implications" tabindex="0">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th scope="col">Language Combination</th>
+                  <th scope="col">Development Implication</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>English only</strong></td>
+                  <td>Single-language CMS. Standard Western font stack with Latin script support.</td>
+                </tr>
+                <tr>
+                  <td><strong>Amharic + English</strong></td>
+                  <td>Bilingual CMS with RTL/LTR toggle support and Ethiopic script font loading.</td>
+                </tr>
+                <tr>
+                  <td><strong>Amharic + Afan Oromo + English</strong></td>
+                  <td>Multi-language CMS with language switcher component and full script coverage.</td>
+                </tr>
+                <tr>
+                  <td><strong>English + Arabic</strong></td>
+                  <td>Bilingual CMS with full RTL (right-to-left) layout mirroring for Arabic pages.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="section-divider"><span class="section-divider-text">Primary Device</span></div>
+
+        <!-- DEVICE -->
+        <section class="content-section" id="device" aria-labelledby="device-heading">
+          <h2 class="section-heading" id="device-heading">4. Primary Device Used</h2>
+          <p class="body-text">Indicate how you expect your audience to access your site. Every site we build works on all devices, but this setting changes our design priority and development focus.</p>
+
+          <div class="field-list">
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="5" y="2" width="10" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><circle cx="10" cy="15" r="1" fill="currentColor"/></svg>
+                <div><p class="field-label">Mobile First</p></div>
+              </div>
+              <div class="field-body">
+                <p>We spend extra development time optimizing for single-thumb scrolling, touch responsiveness, and light asset loading. Navigation is simplified to 3–4 top-level items. All CTAs are large and easy to tap.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="4" width="16" height="11" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M6 18h8M10 15v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Desktop First</p></div>
+              </div>
+              <div class="field-body">
+                <p>We prioritize larger layouts, expanded navigation menus, hover effects, and richer visual content. Ideal for corporate B2B platforms, SaaS dashboards, and professional service firms where users are office-based.</p>
+              </div>
+            </div>
+            <div class="field-item">
+              <div class="field-item-header">
+                <svg class="field-icon" viewBox="0 0 20 20" fill="none"><rect x="2" y="5" width="11" height="8" rx="2" stroke="currentColor" stroke-width="1.8"/><rect x="14" y="7" width="4" height="8" rx="1" stroke="currentColor" stroke-width="1.8"/><path d="M4 17h7M6 13v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div><p class="field-label">Both (Responsive)</p></div>
+              </div>
+              <div class="field-body">
+                <p>We build a fully adaptive layout that seamlessly transitions across all screen sizes. The most common recommendation for businesses serving a general audience — ensures no visitor is left with a broken experience.</p>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="subsection-heading">Frequently Asked Questions</h3>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What if our website serves everyone from teenagers to elderly individuals?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>While anyone might visit, focus strictly on your most valuable decision-makers. For example, if you operate a family dental clinic or a local legal firm, your primary website visitors are the adult billing decision-makers (ages 25–60) who look up reviews and book appointments — not the young children or dependents who receive the actual service later.</p>
+                <p>Once we identify your primary audience, we layer accessibility improvements that make the site usable for all age groups without compromising the core design.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Does targeting a local audience affect my website's loading speed?
+                <svg class="faq-chevron" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, positively. When your audience is local, we host your website files on the closest available cloud server to your target region. This dramatically reduces the physical distance data must travel, resulting in faster page load times for your local visitors. For Ethiopian businesses, we select the optimal server region in East Africa or the Middle East.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <nav class="article-nav" aria-label="Article navigation">
+          <a href="website-purpose.html" class="article-nav-prev">
+            <span class="article-nav-label">← Previous</span>
+            <span class="article-nav-title">Website Purpose</span>
+          </a>
+          <a href="branding-identity.html" class="article-nav-next">
+            <span class="article-nav-label">Next Section</span>
+            <span class="article-nav-title">Branding &amp; Identity →</span>
+          </a>
+        </nav>
+
+      </div>
+    </main>
+  </div>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      
+      <div class="footer-brand">
+        <!-- Updated: Your new 3D PNG logo replacing the SVG -->
+        <img src="../assets/logo/logo.png" alt="URHIDU Logo" class="footer-logo" />
+        
+        <div>
+          <p class="footer-company">URHIDU Company</p>
+          <p class="footer-tagline">Premium Website Development &amp; Digital Strategy</p>
+        </div>
+      </div>
+      
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Documentation</h4>
+          <ul class="footer-link-list" role="list">
+            <li><a href="../index.html" class="footer-link">Overview</a></li>
+            <li><a href="organization-profile.html" class="footer-link">Org Profile</a></li>
+            <li><a href="contact-information.html" class="footer-link">Contact Info</a></li>
+            <li><a href="website-purpose.html" class="footer-link">Website Purpose</a></li>
+            <li><a href="target-audience.html" class="footer-link">Target Audience</a></li>
+            <li><a href="branding-identity.html" class="footer-link">Branding</a></li>
+            <li><a href="required-questions.html" class="footer-link">Requirements</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <address class="footer-address">
+            <p><a href="https://urhidu.pro.et" class="footer-link" target="_blank" rel="noopener">urhidu.pro.et</a></p>
+            <p><a href="tel:+251989954455" class="footer-link">+251 989 954 455</a></p>
+            <p>Dire Dawa, Ethiopia</p>
+          </address>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 URHIDU Company. All rights reserved.</p>
+      <p class="footer-meta">Documentation v1.0 &nbsp;·&nbsp; Last updated: May 2026</p>
+    </div>
+  </footer>
+  
+  
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+    function toggleSidebar(open) {
+      sidebar.classList.toggle('sidebar--open', open);
+      overlay.classList.toggle('overlay--visible', open);
+      menuToggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('no-scroll', open);
+    }
+    menuToggle.addEventListener('click', () => toggleSidebar(!sidebar.classList.contains('sidebar--open')));
+    overlay.addEventListener('click', () => toggleSidebar(false));
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-item--open');
+        document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('faq-item--open'); i.querySelector('.faq-question').setAttribute('aria-expanded', 'false'); });
+        if (!isOpen) { item.classList.add('faq-item--open'); this.setAttribute('aria-expanded', 'true'); }
+      });
+    });
+  </script>
+</body>
+
+  <script src="../js/search.js"></script>
+</html>
